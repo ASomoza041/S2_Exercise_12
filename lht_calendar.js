@@ -5,8 +5,8 @@
    Tutorial 10
    Tutorial Case
 
-   Author: 
-   Date:  
+   Author: Alex A Somoza
+   Date: 2-19-19 
 
    Filename:   lht_calendar.js  
 
@@ -29,3 +29,21 @@
       Writes the daily rows in the calendar table, highlighting calDate
 	
 */
+
+/* Set the date displayed in the calendar */
+var thisDay = new Date("August 24, 2018");
+// Write the calendar to the element with the ID "calendar"
+document.getElementById("calendar").innerHTML = createCalendar(thisDay);
+
+// Function to generate the calendar table
+function createCalendar(calDate) {
+      var calendarHTML = "<table id='calendar_table'>";
+      calendarHTML += "</table>";
+      return calendarHTML;
+}
+
+// Function to write the calender caption
+function calCaption(calDate) {
+      //month name array contains the list of month names
+      var monthName = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+}
